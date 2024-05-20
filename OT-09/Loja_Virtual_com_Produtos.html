@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="/OT-09/css/Loja_Virtual_com_Produtos.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Loja Virtual</h1>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <div>
+                <label for="categoryFilter">Categoria: </label>
+                <select id="categoryFilter" onchange="filterProducts()">
+                    <option value="all">Todas</option>
+                    <option value="electronics">Eletrônicos</option>
+                    <option value="clothing">Roupas</option>
+                    <option value="books">Livros</option>
+                </select>
+            </div>
+            <div>
+                <label for="sortOrder">Ordenar por: </label>
+                <select id="sortOrder" onchange="sortProducts()">
+                    <option value="name">Nome</option>
+                    <option value="price">Preço</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-grid" id="productGrid">
+            <div class="product" data-category="electronics">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>R$ 199,90</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product" data-category="clothing">
+                <img src="produto2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>R$ 49,90</p>
+                <button>Comprar</button>
+            </div>
+            <div class="product" data-category="books">
+                <img src="produto3.jpg" alt="Produto 3">
+                <h3>Produto 3</h3>
+                <p>R$ 29,90</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Fake YouTube.Todos os direitos reservados.</p>
+    </footer>
+</html>
